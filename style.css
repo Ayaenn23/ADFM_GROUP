@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7f50, #9370db, #ff69b4, #32cd32, #ffd700);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #333;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease;
+}
+  
+
+/* Animation de dégradé */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+  /* Conteneur principal */
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 50%;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+  
+/* Groupe de formulaires */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Étiquettes */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+  
+/* Champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+  
+  input[readonly] {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+  }
+  
+  .error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .note {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .submit-btn,
+  .cancel-btn {
+    background-color: #068a1c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .submit-btn:hover {
+    background-color:  #0e5e1b;
+  }
+  
+  .cancel-btn {
+    background-color: #95a5a6;
+    margin-left: 10px;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #7f8c8d;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .error-message {
+    background-color: #ffebee;
+    color: #e53935;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid #e53935;
+  }
+  
+  .success-message {
+    background-color: #e8f5e9;
+    color: #43a047;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid #43a047;
+  }
+  
+  /* Boutons de changement de thème */
+.theme-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.theme-icon {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.theme-icon:hover {
+  transform: scale(1.2);
+}
+
+
+/* Boutons de changement de thème */
+.theme-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.theme-icon {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.theme-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Thèmes */
+.theme-violet {
+    background-color: #ceaced;
+    color: #57109a;
+}
+
+.theme-violet .submit-btn {
+    background-color: #8a2be2;
+}
+
+.theme-rose {
+    background-color: #ffc9db;
+    color: #d1297d;
+}
+
+.theme-rose .submit-btn {
+    background-color: #d1297d;
+}
+
+.theme-vert {
+    background-color: #bce3bc;
+    color: #12a812;
+}
+
+.theme-vert .submit-btn {
+    background-color: #12a812;
+}
+
+.theme-orange {
+    background-color: #f8be99;
+    color: #ff6200;
+}
+
+.theme-orange .submit-btn {
+    background-color: #ff6200;
+}
+
+.theme-jaune {
+    background-color: #f7f7b7;
+    color: hsl(55, 96%, 40%);
+}
+
+.theme-jaune .submit-btn {
+    background-color: #ebca0d;
+}
+
+.theme-bleu {
+    background-color: #c9def1;
+    color: #065ab4;
+}
+
+.theme-bleu .submit-btn {
+    background-color: #065ab4;
+}
+
+.theme-cyan {
+    background-color: #fcd4d4;
+    color: #ff0000;
+}
+
+.theme-cyan .submit-btn {
+    background-color: #ff0000;
+}
+
+.theme-magenta {
+    background-color: #edb4cf;
+    color: #ba1385;
+}
+
+.theme-magenta .submit-btn {
+    background-color: #ba1385;
+}
+
+.theme-noir {
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+.theme-noir .submit-btn {
+    background-color: #ffffff;
+    color: #1c1c1c;
+}
+
+.theme-blanc {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.theme-blanc .submit-btn {
+    background-color: #000000;
+    color: #ffffff;
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "CIN": "AA12345",
+        "nom": "Lahbiri",
+        "pr\u00e9nom": "Douaa",
+        "email": "lhbiridouaa@gmail.com",
+        "t\u00e9l\u00e9phone": "0634569801",
+        "mot_de_passe": "douaa1234"
+    },
+    {
+        "CIN": "AA29458",
+        "nom": "BENCHAHBI",
+        "pr\u00e9nom": "Fatima-ezzahrae",
+        "email": "fatibenchahbi@gmail.com",
+        "t\u00e9l\u00e9phone": "0601456283",
+        "mot_de_passe": "fati1234"
+    },
+    {
+        "CIN": "AA37845",
+        "nom": "ENNASIRY",
+        "pr\u00e9nom": "Aya",
+        "email": "ayaennasiri@gmail.com",
+        "t\u00e9l\u00e9phone": "0634810155",
+        "mot_de_passe": "aya1234"
+    },
+    {
+        "CIN": "AB19845",
+        "nom": "Darije",
+        "pr\u00e9nom": "Mariam",
+        "email": "darijmariam@gmail.com",
+        "t\u00e9l\u00e9phone": "0698451019",
+        "mot_de_passe": "mariam1234"
+    }
+]
